@@ -11,15 +11,19 @@ public class Tree
     {
         Root = new TreeNode();
         Head = Root;
+        LeafNodes = new List<LeafNode>();
     }
 
     public void NextLevel(TreeNode node)
     {
         Head.AddChildren(node);
-        Head = node;
         if (node is LeafNode leafNode)
         {
             LeafNodes.Add(leafNode);
+        }
+        else
+        {
+            Head = node;
         }
     }
 

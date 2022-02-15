@@ -6,10 +6,10 @@ public class LeafNode : TreeNode
     {
     }
 
-    public int Min { get; set; }
-    public int Max { get; set; }
+    public float Min { get; set; }
+    public float Max { get; set; }
     public float Avg { get; set; }
     public int EntryCount { get; set; }
     public int Amount { get; set; }
-    public int SuggestedPrice { get; set; }
+    public float SuggestedPrice { get; set; }
 }
